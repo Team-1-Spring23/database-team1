@@ -59,6 +59,6 @@ const config = {
   });
   
   const port = 3001; // You can use any available port
-  app.listen(port, () => {
+  app.listen(process.env.PORT || port, () => {
     console.log(`Server is running on port ${port}`);
   });
